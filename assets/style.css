@@ -1,0 +1,55 @@
+body {
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    background-color: rgb(236, 151, 165);
+    color: white;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text-center {
+    text-align: center;
+}
+
+ul li {
+    text-align: right;
+    display: inline;
+    padding: 60px;
+    color:rgb(236, 151, 165);
+}
+
+.profile-pic {
+    width: 500px;
+    padding: 60px;
+}
+
+h1 {
+    padding-left: 300px;
+    display: flex;
+    align-items: center;
+    font-size: 100px;
+}
+
+#home {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    
+}
+
+#home img {
+    border-radius: 50%;
+}
+
+img {
+    width: 400px;
+    padding: 60px;
+}
