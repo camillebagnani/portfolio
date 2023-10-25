@@ -13,12 +13,13 @@ header, footer {
     background-color: white;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 ul li {
     text-align: right;
     display: inline;
-    padding: 60px;
+    padding: 0 60px;
     color:rgb(236, 151, 165);
 }
 
@@ -31,12 +32,16 @@ a:link {
 }
 
 a:hover {
-    color: #f72585;
+    color: #e585b0;
 }
 
-.text-center {
-    text-align: center;
+a:visited {
+    color:#f72585
 }
+
+/* .text-center {
+    text-align: center;
+} */
 
 #home {
     height: 100vh;
@@ -61,14 +66,12 @@ h1 {
 #home img {
     border-radius: 50%;
     width: 500px;
-    /* height: 500px; */
 }
 
-
-/* img {
-    width: 400px;
-    padding: 60px;
-} */
+#home img:hover {
+    opacity: 70%;
+    /* content: "Howdy!"; How do I make a message appear when you hover over the image?*/
+}
 
 #first-project {
     display: flex;
@@ -85,7 +88,6 @@ h1 {
 
 #first-project img:hover {
     opacity: 70%;
-    width: 75vw;
 }
 
 #first-project h2 {
@@ -111,23 +113,37 @@ h1 {
     width: 35vw;
 }
 
+#other-projects img:hover {
+    opacity: 70%;
+}
+
 #other-projects h2 {
     padding: 20px;
     text-align: center;
 }
 
 #about-me {
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    /* padding-bottom: 200px; */
+}
+
+#about-me h2 {
+padding: 75px 0;
+font-size: 3vw;
+}
+
+#about-me img {
+    border-radius: 50%;
+    width: 500px;
 }
 
 footer {
-    position: static;
-    width: 100%;
-    bottom: 0;
+    position: relative;
+    bottom: 0px;
 }
     /* margin-top: auto; */
 
