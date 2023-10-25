@@ -26,16 +26,22 @@ a {
     text-decoration: none;
 }
 
+a:link {
+    color: pink;
+}
+
+a:hover {
+    color: #f72585;
+}
+
 .text-center {
     text-align: center;
 }
 
 #home {
-    /* display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around; */
     height: 100vh;
-    /* width: 100vw;  */
+    display: flex;
+    align-items: center;
 }
 
 h1 {
@@ -49,8 +55,9 @@ h1 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    align-items: space-evenly;
+    align-content: center;
 }
+
 #home img {
     border-radius: 50%;
     width: 500px;
@@ -63,25 +70,50 @@ h1 {
     padding: 60px;
 } */
 
-#projects {
+#first-project {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    padding-bottom: 200px;
+    font-size: 3vw;
 }
 
-#projects img {
-    width: 700px;
+#first-project img {
+    width: 70vw;
+}
+
+#first-project img:hover {
+    opacity: 70%;
+    width: 75vw;
+}
+
+#first-project h2 {
+    padding: 20px 0 ;
 }
 
 .first-project {
     flex-basis: 100%;    
 }
 
-.first-project img {
-    width: 80vw !important;
+/* .first-project img {
+    width: 70vw !important;
+} */
+
+#other-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#other-projects img {
+    width: 35vw;
+}
+
+#other-projects h2 {
+    padding: 20px;
+    text-align: center;
 }
 
 #about-me {
@@ -89,13 +121,15 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-bottom: 200px;
+    /* padding-bottom: 200px; */
 }
 
 footer {
-    bottom: 0;
     position: static;
+    width: 100%;
+    bottom: 0;
 }
+    /* margin-top: auto; */
 
 @media screen and (max-width:980px) {
 }
