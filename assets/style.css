@@ -17,7 +17,6 @@ header, footer {
 }
 
 ul li {
-    text-align: right;
     display: inline;
     padding: 0 60px;
     color:rgb(236, 151, 165);
@@ -64,10 +63,10 @@ h1 {
     width: 500px;
 }
 
-#home img:hover {
+/* #home img:hover {
     opacity: 70%;
-    /* content: "Howdy!"; How do I make a message appear when you hover over the image?*/
-}
+    content: "Howdy!"; How do I make a message appear when you hover over the image?
+} */
 
 #first-project {
     display: flex;
@@ -88,10 +87,6 @@ h1 {
 
 #first-project h2 {
     padding: 20px 0 ;
-}
-
-.first-project {
-    flex-basis: 100%;    
 }
 
 #other-projects {
@@ -153,36 +148,64 @@ footer {
 
 @media screen and (max-width:768px) {
     #home {
-        flex-direction: column;
-        padding: 50px;
-        align-items: center; 
+        align-items: center;
+        justify-content: center;
     }
 
     #home img {
-        width: 500px;
+        width: 300px;
     }
 
     #home h1 {
        text-align: center;
-       padding-bottom: 50px;
+       font-size: 40px;
     }
 
     ul li {
         padding: 10px;
     }
 
-    #projects img {
-        width: 80vw;
+    #projects {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    #projects div {
-        margin-bottom: 80px;
-    }
-
-    #projects h2 {
-        margin-bottom: 30px;
+    #first-project h2 {
+        padding-top: 0px
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:400px) {
+    nav {
+        font-size: 15px;
+    }
+
+    #home img {
+        width: 200px;
+    }
+
+    #projects {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #first-project {
+        font-size: 7vw;
+    }
+
+    #other-projects img {
+        width: 200px;
+    }
+        
+    #about-me h2 {
+    font-size: 10vw;
+    }
+    
+    #about-me img {
+        width: 300px;
+    }
 }
