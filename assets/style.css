@@ -210,16 +210,24 @@ footer {
     #other-projects img {
         width: 200px;
     }
+
+    #about-me {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    #about-me h2 {
+        font-size: 1.5em;
+    }
     
     #about-me p {
-    font-size: 15px;
-    padding: 0 1px;
+        font-size: 15px;
+        margin: 0 1px;
+        padding: 1em;
     }
-    /* #about-me h2 {
-    font-size: 10vw;
-    }
-    
+
     #about-me img {
-        width: 300px;
-    } */
+        padding-bottom: 1em;
+    }
 }
